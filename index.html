@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#13121a">
+<title>DIO · 人行道狂飙 | Midnight Run</title>
+<style>
+:root{color-scheme:dark;--bg:#13121a;--paper:#f1edda;--muted:#a7a2b1;--yellow:#e9e873;--line:#37323f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif}button,input,select{font:inherit}button,select{cursor:pointer}button{color:inherit}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--yellow);outline-offset:5px}button{touch-action:manipulation}svg{display:block}main{max-width:1520px;margin:auto;padding:0 48px}.masthead{height:96px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.brand-mark{font-family:Georgia,serif;font-size:35px;font-weight:bold;font-style:italic;letter-spacing:-7px;color:var(--yellow);padding-right:7px}.brand-name{font-size:11px;letter-spacing:3px;line-height:1.7}.top-note{font-size:10px;letter-spacing:2px;color:var(--muted)}.edition{font-size:11px;letter-spacing:2px;display:flex;align-items:center;gap:9px}.dot{width:6px;height:6px;background:var(--yellow);border-radius:50%;display:inline-block}.intro{display:flex;align-items:end;justify-content:space-between;padding:35px 0 25px;gap:20px}.eyebrow{color:var(--yellow);font-size:10px;letter-spacing:3px;margin:0 0 10px}.headline{display:flex;align-items:baseline;gap:20px}h1{font-size:clamp(26px,3.7vw,52px);letter-spacing:-2px;margin:0;font-weight:850;line-height:1.1}.english-title{font-family:Georgia,serif;font-size:clamp(16px,2vw,27px);font-style:italic;color:#b5aabc;white-space:nowrap}.scene-meta{text-align:right;flex-shrink:0;color:var(--muted);font-size:10px;line-height:1.9;letter-spacing:1.8px}.scene-meta strong{color:var(--paper);font-weight:400}.cinema{position:relative;background:#15111e;isolation:isolate;overflow:hidden;border:1px solid #4c4354}.cinema:fullscreen{display:flex;flex-direction:column;justify-content:center;background:#08080c}.stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#28213d}.stage>svg{width:100%;height:100%}.scene-heading{position:absolute;top:25px;left:28px;font-size:10px;letter-spacing:3px;color:#f2edda;display:flex;align-items:center;gap:12px;text-shadow:0 1px 5px #000}.scene-heading:before{content:"";display:block;width:23px;height:1px;background:var(--yellow)}.take{position:absolute;top:23px;right:25px;font:11px/1.5 monospace;letter-spacing:1px;color:#e5dddc}.panel-tag{position:absolute;top:21%;left:4.5%;color:var(--yellow);font:italic 800 clamp(12px,2.1vw,32px)/1 Arial;letter-spacing:2px}.panel-tag span{font-size:10px;display:block;letter-spacing:3px;margin-bottom:9px;color:#c9bfd5;font-style:normal;font-weight:400}.dialogue{position:absolute;top:17%;left:7%;padding:16px 24px 18px;background:#f2efdc;color:#28202d;box-shadow:7px 7px 0 #131019;transform:rotate(-3deg);max-width:37%;border:2px solid #1a1523;font-size:clamp(12px,1.7vw,23px);font-weight:900;line-height:1.7;pointer-events:none}.dialogue:after{content:"";position:absolute;right:-20px;bottom:14px;width:36px;height:25px;background:#f2efdc;clip-path:polygon(0 0,100% 80%,0 100%)}.dialogue small{display:block;font-size:9px;letter-spacing:2px;color:#79706c;font-weight:400;margin-bottom:4px}.subtitle{position:absolute;bottom:6%;left:6%;right:6%;text-align:center;pointer-events:none;font-weight:bold;font-size:clamp(13px,1.6vw,23px);letter-spacing:2px;color:#fff3d8;text-shadow:0 2px 3px #000,2px 0 3px #000,-2px 0 3px #000}.subtitle span{background:#0e0b19b8;padding:8px 17px;box-decoration-break:clone;-webkit-box-decoration-break:clone}.sfx{position:absolute;font-family:"Arial Black","Yu Gothic","Microsoft YaHei",sans-serif;font-weight:1000;font-style:italic;pointer-events:none;line-height:1;paint-order:stroke fill;-webkit-text-stroke:3px #1d1629;text-shadow:5px 5px 0 #251630;color:#e6c5e7;letter-spacing:-8px}.sfx-menace{right:4%;top:53%;font-size:clamp(24px,4.7vw,67px);transform:rotate(-10deg)}.sfx-rush{left:4%;top:43%;font-size:clamp(40px,7.6vw,110px);transform:rotate(-12deg);color:#ecec8b}.speed-readout{position:absolute;right:25px;bottom:55px;text-align:right}.speed-readout b{font-size:clamp(24px,4.1vw,58px);font-weight:400;font-style:italic;font-family:Impact,"Arial Narrow",sans-serif;line-height:1}.speed-readout small{display:block;font:9px/1.5 monospace;letter-spacing:2px;color:#cac1c7}.speed-readout .speed-rule{height:2px;width:78px;background:var(--yellow);margin:7px 0 0 auto;transform-origin:right}.player{padding:18px 24px 16px;background:#1b1822;border-top:1px solid #49404f}.timeline-row{display:flex;align-items:center;gap:16px}.time{font:10px/1 monospace;color:#bdb7c1;min-width:79px;font-variant-numeric:tabular-nums}.time b{color:var(--paper);font-weight:normal}.seek{--progress:0%;width:100%;min-width:20px;appearance:none;height:20px;background:transparent;margin:0;cursor:pointer}.seek::-webkit-slider-runnable-track{height:3px;background:linear-gradient(to right,var(--yellow) var(--progress),#49414f var(--progress));border-radius:1px}.seek::-moz-range-track{height:3px;background:#49414f}.seek::-moz-range-progress{height:3px;background:var(--yellow)}.seek::-webkit-slider-thumb{appearance:none;width:9px;height:13px;background:var(--yellow);margin-top:-5px;border:0;border-radius:1px}.seek::-moz-range-thumb{width:9px;height:13px;background:var(--yellow);border:0;border-radius:1px}.controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:11px}.control-side{display:flex;align-items:center;gap:9px}.icon-btn{background:transparent;border:1px solid transparent;display:flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:7px 9px;font-size:11px;color:#c5becf}.icon-btn:hover{background:#302a39;color:var(--yellow)}.icon-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5}.play-btn{background:var(--yellow);border:0;color:#171522;width:38px;height:36px;display:grid;place-items:center}.play-btn svg{width:16px;height:16px;fill:currentColor}.play-btn:hover{background:#faf8a3}.kbd-tip{font-size:10px;color:#81798b;margin-left:12px;letter-spacing:1px}.speed-select{color:#d3ccd9;background:#1b1822;border:0;padding:8px;font:11px monospace}.divider{width:1px;height:16px;background:#433b4c;margin:0 5px}.chapters{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:25px 0 32px}.chapter{text-align:left;padding:13px 0 0;border:0;border-top:2px solid #38323f;background:none;color:var(--muted);display:grid;grid-template-columns:28px 1fr;gap:7px;transition:color .2s,border-color .2s}.chapter:hover{color:var(--paper)}.chapter[aria-pressed="true"]{color:var(--paper);border-color:var(--yellow)}.chapter .number{font:11px/1.6 monospace;color:#7e7388}.chapter[aria-pressed="true"] .number{color:var(--yellow)}.chapter strong{font-size:12px;letter-spacing:2px;font-weight:500}.chapter small{font:9px/1.5 monospace;display:block;margin-top:8px;color:#857b91;letter-spacing:1px}.footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:20px 0 28px;font-size:9px;letter-spacing:1.8px;color:#756d80}.footer span:last-child{text-align:right}.notice{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--paper);background:#1b1528dc;border:1px solid #7b6987;padding:14px 22px;font-size:13px;pointer-events:none;opacity:0;transition:opacity .15s}.notice.show{opacity:1}@media(min-width:1600px){main{padding:0 55px}.intro{padding-top:42px}.stage{max-height:72vh}.stage>svg{object-fit:cover}}@media(max-width:720px){main{padding:0 18px}.masthead{height:72px}.top-note{display:none}.brand-name{font-size:9px;letter-spacing:2px}.edition{font-size:9px}.intro{padding:25px 0 20px}.headline{display:block}h1{letter-spacing:0}.english-title{display:block;margin-top:8px}.scene-meta{font-size:8px;letter-spacing:.5px}.scene-heading{left:12px;top:13px;font-size:7px;letter-spacing:1px;gap:7px}.take{right:12px;top:12px;font-size:8px}.stage{aspect-ratio:4/3}.stage>svg{width:133.333%;max-width:none;margin-left:-16.667%}.dialogue{left:4%;top:21%;padding:8px 10px;max-width:48%;font-size:12px}.dialogue small{font-size:7px}.subtitle{font-size:12px;left:3%;right:3%;bottom:6%;letter-spacing:.5px;line-height:1.6}.subtitle span{padding:4px 7px}.sfx-menace{right:0;top:52%;letter-spacing:-4px}.sfx-rush{top:50%;left:1%;letter-spacing:-4px}.speed-readout{right:12px;bottom:54px}.speed-readout small{font-size:7px}.speed-readout .speed-rule{width:45px}.player{padding:12px}.kbd-tip{display:none}.icon-btn{min-height:40px;padding:8px}.icon-btn .sound-label{display:none}.control-side{gap:4px}.play-btn{height:40px;width:40px}.chapters{gap:12px;margin:20px 0 24px}.chapter{grid-template-columns:1fr;gap:5px}.chapter strong{font-size:11px;letter-spacing:0}.chapter small{font-size:8px;letter-spacing:0}.footer{font-size:8px;letter-spacing:.5px;line-height:1.7}.panel-tag{left:5%;top:24%}.panel-tag span{font-size:7px}.divider{margin:0 1px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* Fit the complete composition on small screens and keep fullscreen controls visible. */
+.cinema:fullscreen .stage{flex:1 1 auto;min-height:0;width:100%;max-height:calc(100dvh - 105px);aspect-ratio:auto}
+.cinema:fullscreen .stage>svg{width:100%;height:100%;margin:0}
+.cinema:fullscreen .player{flex:0 0 auto;width:100%}
+@media(max-width:720px){.intro{display:block}.intro h1{font-size:clamp(21px,6vw,36px)}.scene-meta{display:none}.stage{aspect-ratio:16/10}.stage>svg{width:100%;margin:0}.dialogue{top:20%;font-size:10px;padding:6px 9px;max-width:53%}.subtitle{font-size:10px;bottom:7%}.speed-readout{bottom:44px}.sfx-menace{top:57%;font-size:25px}.sfx-rush{top:48%;font-size:38px}.chapter small{letter-spacing:-.3px}.chapter strong{font-size:10px}.scene-heading{font-size:6px}.take{font-size:6px}}
+</style>
+</head>
+<body>
+<main>
+ <header class="masthead"><div class="brand"><div class="brand-mark" aria-hidden="true">JJ</div><div class="brand-name">BIZARRE<br>FRAME ARCHIVE</div></div><div class="top-note">A STUDY IN MOTION & MENACE</div><div class="edition"><span class="dot"></span> SVG ANIMATION / 01</div></header>
+ <section class="intro"><div><p class="eyebrow">STARDUST CRUSADERS · FAN ANIMATION</p><div class="headline"><h1>人行道不是很宽敞吗。</h1><span class="english-title">Midnight Run.</span></div></div><div class="scene-meta"><strong>CAIRO / NIGHT DRIVE</strong><br>18 SEC · LOOPING SCENE</div></section>
+ <section class="cinema" id="cinema" aria-label="DIO 人行道狂飙动画播放器">
+  <div class="stage" id="stage">
+   <svg id="scene" viewBox="0 0 1440 810" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="scene-title scene-desc">
+    <title id="scene-title">DIO 的开罗深夜狂飙</title><desc id="scene-desc">金发 DIO 从容命令惊恐的司机。紫色长轿车驶过夜街，跃上路缘，在行人避让中沿人行道疾驰。漫画分镜、滚动街景、烟尘与速度线表现压迫感。</desc>
+    <defs>
+     <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#17182c"/><stop offset=".56" stop-color="#4e325f"/><stop offset="1" stop-color="#c16e86"/></linearGradient>
+     <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#6c536b"/><stop offset="1" stop-color="#1c2032"/></linearGradient>
+     <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#625466"/><stop offset="1" stop-color="#282a3d"/></linearGradient>
+     <linearGradient id="carPaint" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#ac769f"/><stop offset=".24" stop-color="#744868"/><stop offset=".45" stop-color="#432c49"/><stop offset=".83" stop-color="#262439"/><stop offset="1" stop-color="#151b2e"/></linearGradient>
+     <linearGradient id="hood" x2=".7" y2="1"><stop stop-color="#b080a9"/><stop offset=".4" stop-color="#634764"/><stop offset="1" stop-color="#333044"/></linearGradient>
+     <linearGradient id="glass" x2=".8" y2="1"><stop stop-color="#647188"/><stop offset=".28" stop-color="#34394f"/><stop offset="1" stop-color="#141c30"/></linearGradient>
+     <linearGradient id="chrome" x2="0" y2="1"><stop stop-color="#b5b7b5"/><stop offset=".25" stop-color="#62677c"/><stop offset=".5" stop-color="#e7dec5"/><stop offset=".7" stop-color="#3b4058"/><stop offset="1" stop-color="#b4a8b9"/></linearGradient>
+     <linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#faf099"/><stop offset=".42" stop-color="#dfbb53"/><stop offset="1" stop-color="#8b602e"/></linearGradient>
+     <linearGradient id="skin" x2=".8" y2=".3"><stop stop-color="#a96d67"/><stop offset=".42" stop-color="#e6b58e"/><stop offset="1" stop-color="#f5d3a6"/></linearGradient>
+     <linearGradient id="beam"><stop stop-color="#f5e8b3" stop-opacity=".4"/><stop offset="1" stop-color="#faf0c2" stop-opacity="0"/></linearGradient>
+     <radialGradient id="light"><stop stop-color="#efdbac" stop-opacity=".5"/><stop offset="1" stop-color="#ead09a" stop-opacity="0"/></radialGradient>
+     <radialGradient id="vignette"><stop offset=".4" stop-color="#120d22" stop-opacity="0"/><stop offset="1" stop-color="#0b0e1d" stop-opacity=".6"/></radialGradient>
+     <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0717" opacity=".26"/></pattern>
+     <pattern id="grille" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 0V9M4 0V9" stroke="#969baa" stroke-width="1.5"/></pattern>
+     <pattern id="paving" width="140" height="52" patternUnits="userSpaceOnUse" patternTransform="skewX(-37)"><path d="M0 0H140V52H0Z" fill="none" stroke="#a28492" stroke-opacity=".28" stroke-width="2"/></pattern>
+     <clipPath id="portraitClip"><path d="M1100 40H1450V517L975 440Z"/></clipPath>
+     <clipPath id="rearGlass"><path d="M279 84L446 90L468 160L204 145Z"/></clipPath>
+     <clipPath id="frontGlass"><path d="M465 90L601 103L685 177L493 161Z"/></clipPath>
+     <g id="wheel"><ellipse rx="57" ry="67" fill="#101422" stroke="#050915" stroke-width="8"/><ellipse rx="43" ry="53" fill="#2e3146" stroke="#565b70" stroke-width="3"/><ellipse rx="30" ry="40" fill="url(#chrome)" stroke="#141d30" stroke-width="3"/><path d="M-42-32A50 61 0 0 1 26-52" fill="none" stroke="#948296" stroke-opacity=".5" stroke-width="2"/></g>
+     <g id="spokes"><path d="M0-38V38M-38 0H38M-27-27L27 27M-27 27L27-27" stroke="#232a3a" stroke-width="6"/><circle r="12" fill="#a5a6ac" stroke="#303247" stroke-width="3"/></g>
+     <g id="lamp"><path d="M0 0V310M-17 309H17M-10 298H10" stroke="#141c2c" stroke-width="8"/><path d="M0 8Q-4-35 36-30L49-17" fill="none" stroke="#171c2c" stroke-width="6"/><path d="M31-18H61L54-3H38Z" fill="#f1d998" stroke="#222235" stroke-width="4"/><ellipse cx="46" cy="0" rx="87" ry="90" fill="url(#light)"/><path d="M40 0L-30 300H156L50 0" fill="#e9cfaa" opacity=".035"/></g>
+     <g id="runner" fill="#17182b" stroke="#17182b" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="-73" r="11" stroke-width="3"/><path d="M0-56L-7-24L8-3M-7-24L-25 1M-1-48L19-35L32-46M-1-48L-24-41L-32-57" fill="none" stroke-width="11"/><path d="M-9-55L10-48L3-20L-18-25Z" stroke-width="2"/></g>
+     <g id="dioBust" stroke="#231927" stroke-width="3" stroke-linejoin="round">
+      <path d="M24 498L64 382L139 340L178 322L285 321L334 351L397 384L438 500Z" fill="url(#gold)"/>
+      <path d="M164 347L224 381L283 335L318 501H136Z" fill="#171c2b"/>
+      <path d="M62 383L115 367L145 495H93Z" fill="#8f673c"/><path d="M329 361L359 375L395 498H326L309 401Z" fill="#efcc68"/>
+      <path d="M129 348L159 331L206 377L171 389L183 461L122 404Z" fill="#edcb69"/><path d="M291 332L315 348L333 405L272 462L282 392L246 377Z" fill="#c39145"/>
+      <path d="M182 278L177 340L223 376L273 337L263 266Z" fill="url(#skin)"/>
+      <path d="M182 291L223 322L263 285L253 324L222 355L177 333Z" fill="#ae7764" stroke="none"/>
+      <path d="M149 177L156 239L171 273L214 314L240 311L278 277L298 219L294 159L252 107L181 110Z" fill="url(#skin)"/>
+      <path d="M149 185L136 184L136 216L157 239M293 190L309 183L304 215L288 230" fill="#c28e75"/>
+      <path d="M168 162L174 244L215 286L218 310L173 274L157 236L150 175Z" fill="#aa7067" stroke="none"/>
+      <path d="M202 225L216 245L213 253L235 255L224 245L229 220" fill="#ba8571" stroke-width="2"/>
+      <path d="M226 246L237 247" stroke="#5b3b3d" stroke-width="2"/><path d="M188 266Q215 280 249 264L236 284L213 287Z" fill="#a16159" stroke-width="2"/><path d="M195 270Q220 275 245 268" fill="none" stroke="#f3d4aa" stroke-width="3"/>
+      <path d="M160 184L197 181L213 202L172 203Z" fill="#372a3b"/><path d="M232 197L250 176L289 175L278 197Z" fill="#302b3c"/>
+      <path d="M171 198L186 192L203 201L180 206Z" fill="#eddda9" stroke-width="2"/><path d="M239 197L258 187L277 188L266 201Z" fill="#eee2ac" stroke-width="2"/>
+      <path d="M188 194V202M258 189V198" stroke="#a38824" stroke-width="7"/><path d="M188 195V201M259 188V198" stroke="#1d2634" stroke-width="2"/>
+      <path d="M168 175L195 171L211 184M236 179L251 167L283 162" fill="none" stroke-width="6"/>
+      <path d="M155 218L173 217M169 229L184 235M260 218L276 211M258 230L271 223" fill="none" stroke="#8d5d5a" stroke-width="2"/>
+      <path d="M148 210L122 181L126 153L110 160L119 117L108 119L142 71L130 64L167 55L166 31L204 45L226 12L244 43L278 27L278 51L317 45L308 77L336 92L317 114L335 138L307 163L295 202L282 162L284 134L260 113L237 140L213 111L191 139L169 131L166 179Z" fill="url(#gold)"/>
+      <path d="M143 169L155 121L140 129L171 86L179 53M180 128L199 78L216 56L211 101M242 110L252 69L269 53M275 113L290 81L309 75M302 135L315 111" fill="none" stroke="#8b612b" stroke-width="4"/>
+      <path d="M144 140L180 128L214 137L239 138L278 125L297 132L287 153L251 153L226 170L205 151L163 153Z" fill="#49795e"/>
+      <path d="M213 151C196 135 217 126 225 138C235 121 258 138 241 152L226 167Z" fill="#8db472" stroke-width="2"/>
+      <path d="M150 244L157 250L157 266L148 266Z" fill="#9eaa6e"/>
+      <path d="M190 306L180 324M255 302L268 318M193 335L214 345M241 341L255 330" fill="none" stroke="#624c46" stroke-width="2"/>
+      <path d="M69 405L88 443M77 394L99 411M364 395L374 440M342 400L350 455M114 466L127 482" fill="none" stroke="#74532d" stroke-width="3"/>
+     </g>
+    </defs>
+    <rect width="1440" height="810" fill="url(#sky)"/>
+    <circle cx="745" cy="145" r="51" fill="#cbbcaa" opacity=".66"/><circle cx="730" cy="132" r="49" fill="#393047"/>
+    <g id="stars" fill="#e4c9bb" opacity=".45"></g>
+    <g id="skyline" fill="#2b2840" opacity=".9"></g>
+    <g id="city"></g>
+    <path d="M0 479L1440 550V810H0Z" fill="url(#ground)"/>
+    <g id="pavement"><path d="M0 468L1440 547V693L0 613Z" fill="#8b6c80"/><path d="M0 468L1440 547V693L0 613Z" fill="url(#paving)"/><path d="M0 614L1440 694V714L0 634Z" fill="#382e44" stroke="#b5979f" stroke-width="3"/><path d="M0 635L1440 716" stroke="#181c30" stroke-width="8"/><g id="curbMarks" stroke="#c9b3b2" stroke-width="5" opacity=".4"></g></g>
+    <g id="roadMarks" stroke="#d1beb4" stroke-width="9" opacity=".55"></g>
+    <g id="streetLamps"></g>
+    <g id="pedestrians"></g>
+    <g id="motionBack" fill="none" stroke-linecap="round"></g>
+    <g id="dust" fill="#d1b5b9"></g>
+    <g id="carRig">
+     <ellipse cx="561" cy="300" rx="460" ry="37" fill="#0d1020" opacity=".6"/>
+     <g id="carBounce" stroke="#121728" stroke-linejoin="round">
+      <path d="M920 183L1400 121V345L935 245Z" fill="url(#beam)" stroke="none"/>
+      <path d="M173 235L135 204L88 187L103 140L213 120L272 48L453 56L620 73L713 139L906 163L978 195L969 264L839 289L201 257Z" fill="url(#carPaint)" stroke-width="5"/>
+      <path d="M213 122L272 48L453 56L620 73L713 139L675 174L195 151Z" fill="#252a3f" stroke-width="5"/>
+      <path d="M279 67L449 74L607 91L684 159L493 149L202 133Z" fill="url(#glass)" stroke-width="4"/>
+      <path d="M279 67L449 74L467 151L202 133Z" fill="url(#glass)"/>
+      <g clip-path="url(#rearGlass)"><path d="M301 191L325 140L368 121L431 159L446 194Z" fill="#c79f49" stroke-width="3"/><path d="M344 118L341 84L355 65L385 75L394 103L379 130L359 131Z" fill="#e2b58a" stroke-width="2"/><path d="M340 101L326 82L338 65L333 52L354 57L366 44L378 60L395 56L391 76L403 85L391 100L382 84L367 91L354 77L350 107Z" fill="#e3c766" stroke-width="2"/><path d="M352 94L374 92L389 87" stroke="#5d8c62" stroke-width="6"/><path d="M362 105L371 105M383 101L389 100" stroke-width="2"/><path d="M369 119L382 115" fill="none" stroke-width="2"/><path d="M326 152L383 177L448 168" fill="none" stroke="#c9a15e" stroke-width="17"/><path d="M326 152L383 177L448 168" fill="none" stroke="#edca84" stroke-width="9"/></g>
+      <g clip-path="url(#frontGlass)"><path d="M511 180L525 136L559 119L599 129L638 191Z" fill="#626b7b" stroke-width="3"/><path d="M546 105L542 78L560 65L583 77L596 109L581 131L563 128Z" fill="#ce9c8c" stroke-width="2"/><path d="M544 106L529 88L537 67L557 61L573 70L584 68L590 87L570 80L548 88Z" fill="#aca89f" stroke-width="2"/><path d="M567 96L574 96M584 91L590 92M574 113L585 116" fill="none" stroke-width="3"/><path d="M598 122L603 129L599 134Z" fill="#a9d1dc" stroke-width="1"/><ellipse cx="631" cy="165" rx="27" ry="23" fill="none" stroke="#101726" stroke-width="7"/><path d="M569 146L593 167L617 155M593 141L611 140L641 156" fill="none" stroke="#b9a598" stroke-width="10"/></g>
+      <path d="M451 66L471 68L498 154L481 154ZM605 83L623 91L711 151L689 169Z" fill="#817183" stroke-width="3"/>
+      <path d="M217 121L282 56L456 65L619 82" fill="none" stroke="#dbc0c4" stroke-width="3"/>
+      <path d="M230 123L282 80L324 83L277 133Z" fill="#c8b9b9" stroke="none" opacity=".12"/><path d="M499 83L525 87L557 153L530 150Z" fill="#c8c7d0" stroke="none" opacity=".13"/>
+      <path d="M113 144L695 175L911 170L974 192L834 211L103 171Z" fill="url(#hood)" stroke-width="3"/>
+      <path d="M714 142L906 162L973 192L834 211L681 179Z" fill="url(#hood)" stroke-width="3"/>
+      <path d="M724 151L896 168L935 184L824 194Z" fill="#ad849f" stroke="none" opacity=".35"/>
+      <path d="M103 181L830 224L834 266L111 225Z" fill="url(#carPaint)" stroke-width="3"/>
+      <path d="M297 162L298 253M481 171L479 262M687 182L677 272" fill="none" stroke="#171b2f" stroke-width="3"/>
+      <path d="M306 169L471 179M491 180L671 191" fill="none" stroke="#ab8a9c" stroke-width="2"/>
+      <path d="M424 186L452 188M618 198L646 200" stroke="url(#chrome)" stroke-width="7"/>
+      <path d="M110 219L832 260" fill="none" stroke="#aaa4ae" stroke-width="6"/><path d="M110 226L832 267" fill="none" stroke="#191d2e" stroke-width="3"/>
+      <path d="M99 160L120 161L116 184L95 183Z" fill="#d07283" stroke-width="3"/><path d="M103 163L112 164L110 178L101 177Z" fill="#f1a99a" stroke="none"/>
+      <path d="M833 211L979 191L973 261L835 280Z" fill="#272b3e" stroke-width="4"/>
+      <path d="M885 216L940 208L938 244L882 252Z" fill="url(#grille)" stroke="#aeb1b2" stroke-width="3"/>
+      <path d="M842 219L874 214L872 241L840 247ZM946 207L970 203L967 233L943 238Z" fill="#f1e4b3" stroke="#c1b9a3" stroke-width="3"/>
+      <path d="M856 218L854 243M958 206L955 235" stroke="#a9a092" stroke-width="2"/>
+      <path d="M832 262L975 242L973 261L831 281L803 278L807 262Z" fill="url(#chrome)" stroke-width="3"/>
+      <path d="M891 263L931 257L931 274L891 280Z" fill="#d2c7ac" stroke-width="2"/><text x="899" y="273" fill="#273141" font-size="9" stroke="none" font-family="monospace" transform="rotate(-8 899 273)">D 1989</text>
+      <path d="M874 171L873 155M867 156L879 155" stroke="#d9cabc" stroke-width="2"/>
+      <path d="M174 254C176 155 303 165 308 261L288 261C283 192 201 186 194 256Z" fill="#181c2e" stroke-width="3"/>
+      <path d="M704 287C703 183 834 187 841 290L821 291C814 216 735 212 726 288Z" fill="#181c2e" stroke-width="3"/>
+      <g transform="translate(241 247)"><use href="#wheel"/><g transform="scale(.75 1)"><use href="#spokes" id="rearWheel"/></g></g><g transform="translate(774 276)"><use href="#wheel"/><g transform="scale(.75 1)"><use href="#spokes" id="frontWheel"/></g></g>
+      <path d="M172 252C173 167 307 166 309 261M702 282C707 197 833 194 841 290" fill="none" stroke="#c3a4b2" stroke-width="4"/>
+      <path d="M671 148L698 149L710 169L682 174L667 164Z" fill="#8b728d" stroke-width="3"/>
+      <path d="M117 134L176 130M302 58L421 63M733 151L835 161M331 238L623 255" stroke="#e1c9ca" stroke-width="2" opacity=".55"/>
+     </g>
+    </g>
+    <g id="sparks" stroke="#f4e0a0" stroke-width="3" stroke-linecap="round"></g>
+    <g id="motionFront" fill="none" stroke-linecap="round"></g>
+    <g id="portraitPanel">
+     <path d="M1103 42H1440V520L975 440Z" fill="#100f1c" opacity=".8"/>
+     <g clip-path="url(#portraitClip)"><path d="M1080 34H1440V530L961 440Z" fill="#74617a"/><path d="M1080 34H1440V530L961 440Z" fill="url(#dots)"/><path d="M1093 100L1411 40M1060 176L1468 43M1021 275L1473 94M994 365L1471 183M1053 440L1444 271" stroke="#b09caa" stroke-width="2" opacity=".5"/><use href="#dioBust" transform="translate(993 -42) scale(1.1)"/><path d="M1100 42L1440 40V96L1094 109Z" fill="#21172d" opacity=".3"/><path d="M975 440L1440 517V427L1020 369Z" fill="#2d2136" opacity=".25"/></g>
+     <path d="M1103 42L976 440L1440 519" fill="none" stroke="#e4d7b6" stroke-width="3"/>
+     <path d="M1090 42L961 447L1440 533" fill="none" stroke="#19131f" stroke-width="8"/>
+     <text x="1303" y="421" fill="#f1e9b8" font-family="Georgia,serif" font-style="italic" font-weight="bold" font-size="58" letter-spacing="-3" transform="rotate(9 1303 421)">DIO</text>
+    </g>
+    <g id="foreground" fill="#161626"></g>
+    <rect width="1440" height="810" fill="url(#dots)" opacity=".22" pointer-events="none"/>
+    <rect width="1440" height="810" fill="url(#vignette)" pointer-events="none"/>
+    <path d="M0 0H1440V35H0ZM0 775H1440V810H0Z" fill="#11111a"/>
+    <g fill="#cbbcae" font-family="monospace" font-size="10" letter-spacing="2"><text x="29" y="797">JOJO'S BIZARRE ADVENTURE</text><text x="1270" y="797">MIDNIGHT RUN</text></g>
+   </svg>
+   <div class="scene-heading">EGYPT, CAIRO — AFTER DARK</div><div class="take">SCENE 01<br><span id="frameCounter">0000</span> / 0432</div>
+   <div class="dialogue" id="dialogue"><small>DIO / ディオ</small>人行道不是还很宽敞吗？<br>开过去。</div>
+   <div class="panel-tag" id="panelTag"><span>THERE IS NO DETOUR.</span>歩道を行け。</div>
+   <div class="sfx sfx-menace" id="menace">ゴ ゴ ゴ</div><div class="sfx sfx-rush" id="rush">ドドドドッ</div>
+   <div class="speed-readout"><b id="speedNumber">032</b><small>KM/H · FICTIONAL</small><div class="speed-rule" id="speedRule"></div></div>
+   <div class="subtitle"><span id="subtitle" role="status" aria-live="off">「人行道不是还很宽敞吗？开过去。」</span></div>
+   <div class="notice" id="notice"></div>
+  </div>
+  <div class="player">
+   <div class="timeline-row"><span class="time"><b id="currentTime">00:00</b> / 00:18</span><input class="seek" id="seek" type="range" min="0" max="18" value="0" step="0.01" aria-label="动画进度" aria-valuetext="0 秒，共 18 秒"></div>
+   <div class="controls"><div class="control-side"><button class="play-btn" id="play" aria-label="暂停动画"><svg viewBox="0 0 20 20" aria-hidden="true"><path id="playIcon" d="M4 3H8V17H4ZM12 3H16V17H12Z"/></svg></button><button class="icon-btn" id="replay" aria-label="从头重播" title="从头重播（R）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 0 5M4 4v6h6"/></svg></button><span class="kbd-tip">SPACE 暂停 · ← → 逐段回看</span></div><div class="control-side"><button class="icon-btn" id="sound" aria-label="开启合成音效" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9H8L13 5V19L8 15H4ZM17 9L22 15M22 9L17 15" id="soundIcon"/></svg><span class="sound-label" id="soundLabel">音效关闭</span></button><span class="divider"></span><select id="rate" class="speed-select" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1.0×</option><option value="1.5">1.5×</option><option value="2">2.0×</option></select><button class="icon-btn" id="fullscreen" aria-label="全屏播放" title="全屏播放（F）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3V8M16 3H21V8M21 16V21H16M8 21H3V16"/></svg></button></div></div>
+  </div>
+ </section>
+ <nav class="chapters" aria-label="动画分镜"><button class="chapter" data-time="0" aria-pressed="true"><span class="number">01</span><span><strong>不容置疑的命令</strong><small>THE COMMAND · 00:00</small></span></button><button class="chapter" data-time="4.5" aria-pressed="false"><span class="number">02</span><span><strong>没有路，就开上去</strong><small>THE CURB · 00:04.5</small></span></button><button class="chapter" data-time="8" aria-pressed="false"><span class="number">03</span><span><strong>深夜人行道狂飙</strong><small>THE RUSH · 00:08</small></span></button><button class="chapter" data-time="13" aria-pressed="false"><span class="number">04</span><span><strong>恶人的从容</strong><small>THE MENACE · 00:13</small></span></button></nav>
+ <footer class="footer"><span>A HAND-DRAWN SVG TRIBUTE<br>致敬《JOJO 的奇妙冒险》· 非官方同人动画</span><span>NO FOOTAGE. JUST VECTORS.<br>18 秒循环 / 原创绘制 / 可离线播放</span></footer>
+</main>
+<script>
+(() => {
+ 'use strict';
+ const $ = id => document.getElementById(id), NS='http://www.w3.org/2000/svg';
+ const make=(tag,attrs,parent)=>{const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);parent.appendChild(e);return e};
+ const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)), mix=(a,b,p)=>a+(b-a)*p, smooth=(a,b,v)=>{const p=clamp((v-a)/(b-a));return p*p*(3-2*p)}, wrap=(v,n)=>((v%n)+n)%n;
+ // Seeded shapes keep seeking and looping reproducible.
+ let seed=1989; const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
+ const buildings=[],lamps=[],people=[],dust=[],speedLines=[],sparks=[],road=[],curbs=[],near=[];
+ for(let i=0;i<44;i++)make('circle',{cx:random()*1440,cy:50+random()*240,r:.6+random()*1.3},$('stars'));
+ for(let i=0;i<25;i++){const x=i*82,h=50+random()*150;make('path',{d:`M${x} 430V${430-h}h60v${h}Z`},$('skyline'));if(i%4===0)make('path',{d:`M${x+16} ${430-h}v-32h7v-38h5v38h7v32Z`},$('skyline'))}
+ for(let i=0;i<13;i++){
+  const g=make('g',{},$('city')),w=160+random()*95,h=190+random()*150,base=477;
+  make('path',{d:`M0 ${base}V${base-h}H${w}V${base}Z`,fill:i%2?'#514157':'#645269',stroke:'#24273d','stroke-width':3},g);
+  make('path',{d:`M${w-24} ${base-h}H${w}V${base}H${w-24}Z`,fill:'#2b2a40',opacity:.6},g);
+  make('path',{d:`M-6 ${base-h}H${w+4}v11H-6Z`,fill:'#8e6f7d',stroke:'#353048','stroke-width':2},g);
+  for(let y=base-h+28;y<400;y+=56)for(let x=20;x<w-30;x+=43){const lit=random()>.44;make('rect',{x,y,width:20,height:32,fill:lit?'#b09b85':'#252d43',stroke:'#343046','stroke-width':4,opacity:lit?.7:1},g);make('path',{d:`M${x+10} ${y}v32M${x} ${y+18}h20`,stroke:'#464155','stroke-width':2},g)}
+  make('rect',{x:18,y:411,width:w-57,height:65,fill:'#23273b',stroke:'#857180','stroke-width':4},g);
+  make('path',{d:`M10 407H${w-28}l10 18H0Z`,fill:['#8b526d','#69706b','#a78469'][i%3],stroke:'#28293e','stroke-width':3},g);
+  for(let k=0;k<4;k++)make('path',{d:`M${16+k*32} 408l-6 15`,stroke:'#d1ae9b','stroke-width':9,opacity:.3},g);
+  if(i%3===0){make('rect',{x:15,y:374,width:113,height:23,fill:'#ad9471',stroke:'#383145','stroke-width':3},g);const t=make('text',{x:71,y:390,'text-anchor':'middle',fill:'#2f2b3c','font-family':'Georgia,serif','font-size':12,'letter-spacing':2},g);t.textContent=i%2?'CAIRO CAFÉ':'NILE HOTEL'}
+  buildings.push({g,x:i*231,y:(i%3)*4});
+ }
+ for(let i=0;i<6;i++){const g=make('use',{href:'#lamp'},$('streetLamps'));lamps.push({g,x:i*390})}
+ for(let i=0;i<8;i++){const g=make('use',{href:'#runner'},$('pedestrians'));people.push({g,x:960+i*350,y:530+(i%3)*26,scale:.7+(i%3)*.13})}
+ for(let i=0;i<15;i++){const g=make('path',{stroke:'#d5c1ba','stroke-width':7},$('roadMarks'));road.push({g,x:i*180})}
+ for(let i=0;i<22;i++){const g=make('path',{},$('curbMarks'));curbs.push({g,x:i*95})}
+ for(let i=0;i<22;i++){const g=make('ellipse',{opacity:0},$('dust'));dust.push({g,k:random(),r:12+random()*29})}
+ for(let i=0;i<38;i++){const front=i>25,g=make('path',{stroke:i%3?'#e9c6c5':'#e8e990','stroke-width':i%4===0?3:1,opacity:0},front?$('motionFront'):$('motionBack'));speedLines.push({g,x:random()*1600,y:90+random()*640,len:70+random()*310,front})}
+ for(let i=0;i<14;i++){const g=make('path',{opacity:0},$('sparks'));sparks.push({g,k:random()})}
+ for(let i=0;i<3;i++){const g=make('g',{},$('foreground'));make('path',{d:'M0 0h17v290H0Z'},g);make('path',{d:'M-28 0H49L32-45H-10Z'},g);near.push({g,x:580+i*1350})}
+ let time=0,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches,rate=1,last=0,lastChapter=-1,soundOn=false,audio=null,noticeTimer;
+ const DURATION=18,chapters=[0,4.5,8,13],buttons=[...document.querySelectorAll('.chapter')];
+ const captions=['「人行道不是还很宽敞吗？开过去。」','「可、可是……那边都是人啊！」','引擎咆哮。整条街，都得让路。','DIO：继续开。'];
+ function flashNotice(text){$('notice').textContent=text;$('notice').classList.add('show');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').classList.remove('show'),1100)}
+ function setPlaying(value){playing=value;last=0;$('play').setAttribute('aria-label',playing?'暂停动画':'播放动画');$('playIcon').setAttribute('d',playing?'M4 3H8V17H4ZM12 3H16V17H12Z':'M5 2L18 10L5 18Z');if(audio)audio.gain.gain.setTargetAtTime(soundOn&&playing?.035:0,audio.ctx.currentTime,.08)}
+ function render(){
+  const ramp=smooth(3.2,8,time),returning=smooth(16.3,18,time),rush=ramp*(1-returning),up=smooth(4.5,6.9,time)*(1-returning),travel=52*time+23*time*time;
+  const hop=Math.sin(clamp((time-4.6)/2.0)*Math.PI)*52,sp=32+Math.round(rush*95),shake=playing&&time>5&&time<7?Math.sin(time*63)*2.5:0;
+  const change=chapters.reduce((n,v,i)=>time>=v?i:n,0);
+  if(change!==lastChapter){buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===change)));$('subtitle').textContent=captions[change];lastChapter=change}
+  $('scene').style.transform=`translate(${shake}px,${shake*.4}px)`;
+  buildings.forEach(({g,x,y})=>g.setAttribute('transform',`translate(${wrap(x-travel*.48+260,3003)-260} ${y})`));
+  $('skyline').setAttribute('transform',`translate(${-wrap(travel*.09,80)} 0)`);
+  lamps.forEach(({g,x})=>{const xx=wrap(x-travel*.84+170,2340)-170;g.setAttribute('transform',`translate(${xx} ${169+xx*.047})`) });
+  road.forEach(({g,x})=>{const xx=wrap(x-travel*1.35+200,2700)-200;const y=704+xx*.055;g.setAttribute('d',`M${xx} ${y}l115 6`)});
+  curbs.forEach(({g,x})=>{const xx=wrap(x-travel+100,2090)-100,y=615+xx*.056;g.setAttribute('d',`M${xx} ${y}v17`)});
+  people.forEach(({g,x,y,scale},i)=>{let xx=wrap(x-travel*.88+170,2800)-170;const escape=up*clamp(1-Math.abs(xx-820)/500),yy=y+xx*.045-escape*70;g.setAttribute('transform',`translate(${xx+escape*(i%2?80:-55)} ${yy}) rotate(${escape*(i%2?22:-20)}) scale(${scale*(i%2?-1:1)} ${scale})`);g.setAttribute('opacity',1-escape*.3)});
+  const carX=90+smooth(0,4.5,time)*47+rush*28,carY=398-up*101-hop;
+  $('carRig').setAttribute('transform',`translate(${carX} ${carY}) scale(.99)`);
+  $('carBounce').setAttribute('transform',`rotate(${-Math.sin(clamp((time-4.5)/2.6)*Math.PI)*5.5} 480 260) translate(0 ${Math.sin(time*24)*rush*1.2})`);
+  $('rearWheel').setAttribute('transform',`rotate(${travel*.65})`);$('frontWheel').setAttribute('transform',`rotate(${travel*.65})`);
+  dust.forEach(({g,k,r},i)=>{const p=wrap(time*(.6+rush*.8)+k,1);g.setAttribute('cx',carX+240-p*(210+rush*220));g.setAttribute('cy',carY+300-p*80+Math.sin(i)*20);g.setAttribute('rx',r*(.3+p*1.9));g.setAttribute('ry',r*(.15+p*.75));g.setAttribute('opacity',rush*.32*(1-p))});
+  speedLines.forEach(({g,x,y,len,front})=>{const xx=wrap(x-travel*(front?3:2),1900)-220;g.setAttribute('d',`M${xx} ${y}l${len*rush} ${len*rush*.05}`);g.setAttribute('opacity',rush*(front?.24:.18))});
+  sparks.forEach(({g,k},i)=>{const p=wrap(time*2+k,1),x=carX+760-p*200,y=carY+337-p*40+Math.sin(i)*17;g.setAttribute('d',`M${x} ${y}l${-17-p*35} ${8+p*12}`);g.setAttribute('opacity',time>5.15&&time<6.5?(1-p)*.9:0)});
+  near.forEach(({g,x})=>{const xx=wrap(x-travel*1.9+300,4050)-300;g.setAttribute('transform',`translate(${xx} ${570+xx*.055}) scale(1.7)`) });
+  const portraitOpacity=1-smooth(4.0,6.0,time)*.82+smooth(12,14,time)*.82;
+  $('portraitPanel').setAttribute('opacity',portraitOpacity);$('portraitPanel').setAttribute('transform',`translate(${(1-portraitOpacity)*65} 0)`);
+  $('dialogue').style.opacity=1-smooth(3.7,4.6,time);$('menace').style.opacity=portraitOpacity*.9;$('menace').style.transform=`rotate(-10deg) translateY(${Math.sin(time*2)*3}px)`;
+  $('rush').style.opacity=smooth(6.3,8,time)*(1-smooth(12.5,13.5,time));$('rush').style.transform=`rotate(-12deg) scale(${1+Math.sin(time*9)*.015})`;
+  $('panelTag').style.opacity=smooth(12.5,14,time)*(1-returning);
+  $('speedNumber').textContent=String(sp).padStart(3,'0');$('speedRule').style.transform=`scaleX(${.25+rush*.75})`;
+  $('frameCounter').textContent=String(Math.floor(time*24)).padStart(4,'0');$('seek').value=time;$('seek').style.setProperty('--progress',`${time/DURATION*100}%`);$('seek').setAttribute('aria-valuetext',`${time.toFixed(1)} 秒，共 18 秒`);$('currentTime').textContent=`00:${String(Math.floor(time)).padStart(2,'0')}`;
+  if(audio){const now=audio.ctx.currentTime;audio.osc.frequency.setTargetAtTime(38+sp*.85,now,.1);audio.overtone.frequency.setTargetAtTime(77+sp*1.7,now,.1);audio.filter.frequency.setTargetAtTime(180+sp*4,now,.1);audio.gain.gain.setTargetAtTime(soundOn&&playing?.025+rush*.028:0,now,.1)}
+ }
+ function seek(value){time=clamp(value,0,DURATION-.001);last=0;render()}
+ $('play').addEventListener('click',()=>setPlaying(!playing));$('replay').addEventListener('click',()=>{seek(0);setPlaying(true)});
+ $('seek').addEventListener('input',e=>seek(Number(e.target.value)));$('rate').addEventListener('change',e=>{rate=Number(e.target.value)});
+ buttons.forEach(b=>b.addEventListener('click',()=>seek(Number(b.dataset.time))));
+ async function toggleSound(){
+  try{
+   if(!audio){const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)throw new Error('unsupported');const ctx=new Audio(),osc=ctx.createOscillator(),overtone=ctx.createOscillator(),filter=ctx.createBiquadFilter(),gain=ctx.createGain();osc.type='sawtooth';overtone.type='triangle';filter.type='lowpass';gain.gain.value=0;osc.connect(filter);overtone.connect(filter);filter.connect(gain);gain.connect(ctx.destination);osc.start();overtone.start();audio={ctx,osc,overtone,filter,gain}}
+   await audio.ctx.resume();soundOn=!soundOn;$('sound').setAttribute('aria-pressed',String(soundOn));$('sound').setAttribute('aria-label',soundOn?'关闭合成音效':'开启合成音效');$('soundLabel').textContent=soundOn?'音效开启':'音效关闭';$('soundIcon').setAttribute('d',soundOn?'M4 9H8L13 5V19L8 15H4ZM17 8Q22 12 17 16M19 4Q28 12 19 20':'M4 9H8L13 5V19L8 15H4ZM17 9L22 15M22 9L17 15');render();
+  }catch{flashNotice('当前浏览器无法播放合成音效')}
+ }
+ $('sound').addEventListener('click',toggleSound);
+ async function full(){try{if(document.fullscreenElement)await document.exitFullscreen();else if($('cinema').requestFullscreen)await $('cinema').requestFullscreen();else flashNotice('此浏览器不支持全屏')}catch{flashNotice('当前预览环境不支持全屏')}}
+ $('fullscreen').addEventListener('click',full);
+ document.addEventListener('fullscreenchange',()=>{const active=!!document.fullscreenElement;$('fullscreen').setAttribute('aria-label',active?'退出全屏':'全屏播放');$('fullscreen').setAttribute('aria-pressed',String(active));$('fullscreen').title=active?'退出全屏（F）':'全屏播放（F）'});
+ document.addEventListener('keydown',e=>{if(/INPUT|SELECT|BUTTON|TEXTAREA/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;if(e.code==='Space'){e.preventDefault();setPlaying(!playing)}else if(e.code==='ArrowRight'){e.preventDefault();seek(time+1)}else if(e.code==='ArrowLeft'){e.preventDefault();seek(time-1)}else if(e.code==='KeyR'){seek(0);setPlaying(true)}else if(e.code==='KeyF')full()});
+ document.addEventListener('visibilitychange',()=>{last=0;if(audio){if(document.hidden)audio.ctx.suspend().catch(()=>{});else if(soundOn)audio.ctx.resume().catch(()=>{})}});
+ matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{if(e.matches){setPlaying(false);render()}});
+ function tick(now){if(!last)last=now;if(playing&&!document.hidden){time=(time+Math.min((now-last)/1000,.07)*rate)%DURATION;render()}last=now;requestAnimationFrame(tick)}
+ setPlaying(playing);render();requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
